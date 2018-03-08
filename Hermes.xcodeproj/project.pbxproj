@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"Hermes::HermesPackageTests::ProductTarget" /* HermesPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_65 /* Build configuration list for PBXAggregateTarget "HermesPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_68 /* PBXTargetDependency */,
+			);
+			name = HermesPackageTests;
+			productName = HermesPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_28 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_34 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Package.swift */; };
+		OBJ_40 /* HermesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* HermesTests.swift */; };
+		OBJ_42 /* Hermes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Hermes::Hermes::Product" /* Hermes.framework */; };
+		OBJ_43 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; };
+		OBJ_52 /* Hermes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Hermes.swift */; };
+		OBJ_54 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; };
+		OBJ_60 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Compression.swift */; };
+		OBJ_61 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* SSLSecurity.swift */; };
+		OBJ_62 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* WebSocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F90F2F92051D1C600221847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Starscream::Starscream";
+			remoteInfo = Starscream;
+		};
+		3F90F2FA2051D1C600221847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Hermes::Hermes";
+			remoteInfo = Hermes;
+		};
+		3F90F2FB2051D1C600221847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Starscream::Starscream";
+			remoteInfo = Starscream;
+		};
+		3F90F2FC2051D1C600221847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Hermes::HermesTests";
+			remoteInfo = HermesTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"Hermes::Hermes::Product" /* Hermes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Hermes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Hermes::HermesTests::Product" /* HermesTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HermesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_12 /* HermesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesTests.swift; sourceTree = "<group>"; };
+		OBJ_15 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/jeremy/Projects/Hermes/.build/checkouts/Starscream.git--8239888854797068891/Package.swift"; sourceTree = "<group>"; };
+		OBJ_16 /* Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
+		OBJ_17 /* SSLSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		OBJ_18 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Hermes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hermes.swift; sourceTree = "<group>"; };
+		"Starscream::Starscream::Product" /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_42 /* Hermes.framework in Frameworks */,
+				OBJ_43 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_54 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_10 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* HermesTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* HermesTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* HermesTests.swift */,
+			);
+			name = HermesTests;
+			path = Tests/HermesTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_13 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* Starscream 3.0.4 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_14 /* Starscream 3.0.4 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* Package.swift */,
+				OBJ_16 /* Compression.swift */,
+				OBJ_17 /* SSLSecurity.swift */,
+				OBJ_18 /* WebSocket.swift */,
+			);
+			name = "Starscream 3.0.4";
+			path = ".build/checkouts/Starscream.git--8239888854797068891/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Hermes::HermesTests::Product" /* HermesTests.xctest */,
+				"Hermes::Hermes::Product" /* Hermes.framework */,
+				"Starscream::Starscream::Product" /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_10 /* Tests */,
+				OBJ_13 /* Dependencies */,
+				OBJ_19 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Hermes */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* Hermes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Hermes.swift */,
+			);
+			name = Hermes;
+			path = Sources/Hermes;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Hermes::Hermes" /* Hermes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_48 /* Build configuration list for PBXNativeTarget "Hermes" */;
+			buildPhases = (
+				OBJ_51 /* Sources */,
+				OBJ_53 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_55 /* PBXTargetDependency */,
+			);
+			name = Hermes;
+			productName = Hermes;
+			productReference = "Hermes::Hermes::Product" /* Hermes.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Hermes::HermesTests" /* HermesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "HermesTests" */;
+			buildPhases = (
+				OBJ_39 /* Sources */,
+				OBJ_41 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_44 /* PBXTargetDependency */,
+				OBJ_46 /* PBXTargetDependency */,
+			);
+			name = HermesTests;
+			productName = HermesTests;
+			productReference = "Hermes::HermesTests::Product" /* HermesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Hermes::SwiftPMPackageDescription" /* HermesPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_24 /* Build configuration list for PBXNativeTarget "HermesPackageDescription" */;
+			buildPhases = (
+				OBJ_27 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HermesPackageDescription;
+			productName = HermesPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Starscream::Starscream" /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_56 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				OBJ_59 /* Sources */,
+				OBJ_63 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = "Starscream::Starscream::Product" /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Starscream::SwiftPMPackageDescription" /* StarscreamPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_30 /* Build configuration list for PBXNativeTarget "StarscreamPackageDescription" */;
+			buildPhases = (
+				OBJ_33 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarscreamPackageDescription;
+			productName = StarscreamPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"Starscream::Starscream" = {
+						LastSwiftMigration = 0920;
+					};
+				};
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Hermes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Hermes::SwiftPMPackageDescription" /* HermesPackageDescription */,
+				"Starscream::SwiftPMPackageDescription" /* StarscreamPackageDescription */,
+				"Hermes::HermesTests" /* HermesTests */,
+				"Hermes::Hermes" /* Hermes */,
+				"Starscream::Starscream" /* Starscream */,
+				"Hermes::HermesPackageTests::ProductTarget" /* HermesPackageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_28 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_34 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_40 /* HermesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_52 /* Hermes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_60 /* Compression.swift in Sources */,
+				OBJ_61 /* SSLSecurity.swift in Sources */,
+				OBJ_62 /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Hermes::Hermes" /* Hermes */;
+			targetProxy = 3F90F2FA2051D1C600221847 /* PBXContainerItemProxy */;
+		};
+		OBJ_46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Starscream::Starscream" /* Starscream */;
+			targetProxy = 3F90F2FB2051D1C600221847 /* PBXContainerItemProxy */;
+		};
+		OBJ_55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Starscream::Starscream" /* Starscream */;
+			targetProxy = 3F90F2F92051D1C600221847 /* PBXContainerItemProxy */;
+		};
+		OBJ_68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Hermes::HermesTests" /* HermesTests */;
+			targetProxy = 3F90F2FC2051D1C600221847 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/HermesTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = HermesTests;
+			};
+			name = Debug;
+		};
+		OBJ_38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/HermesTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = HermesTests;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/Hermes_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Hermes;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Hermes;
+			};
+			name = Debug;
+		};
+		OBJ_50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/Hermes_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Hermes;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Hermes;
+			};
+			name = Release;
+		};
+		OBJ_57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/Starscream_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Starscream;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Starscream;
+			};
+			name = Debug;
+		};
+		OBJ_58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/Starscream_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Starscream;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Starscream;
+			};
+			name = Release;
+		};
+		OBJ_66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "Hermes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_24 /* Build configuration list for PBXNativeTarget "HermesPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_25 /* Debug */,
+				OBJ_26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_30 /* Build configuration list for PBXNativeTarget "StarscreamPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_31 /* Debug */,
+				OBJ_32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_36 /* Build configuration list for PBXNativeTarget "HermesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_37 /* Debug */,
+				OBJ_38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_48 /* Build configuration list for PBXNativeTarget "Hermes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_49 /* Debug */,
+				OBJ_50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_56 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_57 /* Debug */,
+				OBJ_58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_65 /* Build configuration list for PBXAggregateTarget "HermesPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_66 /* Debug */,
+				OBJ_67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
