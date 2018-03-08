@@ -2,5 +2,5 @@ import XCTest
 @testable import HermesTests
 
 XCTMain([
-    testCase(HermesTests.allTests),
+    testCase(HermesTests.allTests)
 ])

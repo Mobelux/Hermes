@@ -188,6 +188,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_48 /* Build configuration list for PBXNativeTarget "Hermes" */;
 			buildPhases = (
+				3F90F3022051EA0400221847 /* Swiftlint */,
 				OBJ_51 /* Sources */,
 				OBJ_53 /* Frameworks */,
 			);
@@ -292,6 +293,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F90F3022051EA0400221847 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_27 /* Sources */ = {
