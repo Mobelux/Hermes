@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Hermes::ActionCable"
+               BuildableName = "ActionCable.framework"
+               BlueprintName = "ActionCable"
+               ReferencedContainer = "container:Hermes.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Hermes::Hermes"
                BuildableName = "Hermes.framework"
                BlueprintName = "Hermes"
@@ -53,6 +67,16 @@
                ReferencedContainer = "container:Hermes.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Hermes::ActionCableTests"
+               BuildableName = "ActionCableTests.xctest"
+               BlueprintName = "ActionCableTests"
+               ReferencedContainer = "container:Hermes.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -71,9 +95,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "Hermes::Hermes"
-            BuildableName = "Hermes.framework"
-            BlueprintName = "Hermes"
+            BlueprintIdentifier = "Hermes::ActionCable"
+            BuildableName = "ActionCable.framework"
+            BlueprintName = "ActionCable"
             ReferencedContainer = "container:Hermes.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -9,11 +9,12 @@
 /* Begin PBXAggregateTarget section */
 		"Hermes::HermesPackageTests::ProductTarget" /* HermesPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_65 /* Build configuration list for PBXAggregateTarget "HermesPackageTests" */;
+			buildConfigurationList = OBJ_99 /* Build configuration list for PBXAggregateTarget "HermesPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_68 /* PBXTargetDependency */,
+				OBJ_102 /* PBXTargetDependency */,
+				OBJ_103 /* PBXTargetDependency */,
 			);
 			name = HermesPackageTests;
 			productName = HermesPackageTests;
@@ -21,43 +22,92 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		3F90F3042052DFAB00221847 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F3032052DFAB00221847 /* Request.swift */; };
-		3F90F3062052E15200221847 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F3052052E15200221847 /* WebSocket.swift */; };
-		OBJ_28 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_34 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Package.swift */; };
-		OBJ_40 /* HermesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* HermesTests.swift */; };
-		OBJ_42 /* Hermes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Hermes::Hermes::Product" /* Hermes.framework */; };
-		OBJ_43 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; };
-		OBJ_52 /* Hermes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Hermes.swift */; };
-		OBJ_54 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; };
-		OBJ_60 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Compression.swift */; };
-		OBJ_61 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* SSLSecurity.swift */; };
-		OBJ_62 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* WebSocket.swift */; };
+		OBJ_36 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_42 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Package.swift */; };
+		OBJ_48 /* HermesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* HermesTests.swift */; };
+		OBJ_50 /* Hermes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Hermes::Hermes::Product" /* Hermes.framework */; };
+		OBJ_51 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; };
+		OBJ_61 /* ActionCableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* ActionCableTests.swift */; };
+		OBJ_63 /* ActionCable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Hermes::ActionCable::Product" /* ActionCable.framework */; };
+		OBJ_64 /* Hermes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Hermes::Hermes::Product" /* Hermes.framework */; };
+		OBJ_65 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; };
+		OBJ_74 /* ActionCable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* ActionCable.swift */; };
+		OBJ_76 /* Hermes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Hermes::Hermes::Product" /* Hermes.framework */; };
+		OBJ_77 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; };
+		OBJ_84 /* Hermes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Hermes.swift */; };
+		OBJ_85 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Request.swift */; };
+		OBJ_86 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* WebSocket.swift */; };
+		OBJ_88 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Starscream::Starscream::Product" /* Starscream.framework */; };
+		OBJ_94 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Compression.swift */; };
+		OBJ_95 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* SSLSecurity.swift */; };
+		OBJ_96 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* WebSocket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3F90F2FD2051D84B00221847 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Starscream::Starscream";
-			remoteInfo = Starscream;
-		};
-		3F90F2FE2051D84B00221847 /* PBXContainerItemProxy */ = {
+		3F90F3162053266800221847 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Hermes::Hermes";
 			remoteInfo = Hermes;
 		};
-		3F90F2FF2051D84B00221847 /* PBXContainerItemProxy */ = {
+		3F90F3172053266800221847 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Starscream::Starscream";
 			remoteInfo = Starscream;
 		};
-		3F90F3002051D84B00221847 /* PBXContainerItemProxy */ = {
+		3F90F3182053266800221847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Starscream::Starscream";
+			remoteInfo = Starscream;
+		};
+		3F90F3192053266800221847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Hermes::Hermes";
+			remoteInfo = Hermes;
+		};
+		3F90F31A2053266800221847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Starscream::Starscream";
+			remoteInfo = Starscream;
+		};
+		3F90F31B2053266800221847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Hermes::ActionCable";
+			remoteInfo = ActionCable;
+		};
+		3F90F31C2053266800221847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Hermes::Hermes";
+			remoteInfo = Hermes;
+		};
+		3F90F31D2053266800221847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Starscream::Starscream";
+			remoteInfo = Starscream;
+		};
+		3F90F31E2053266800221847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Hermes::ActionCableTests";
+			remoteInfo = ActionCableTests;
+		};
+		3F90F31F2053266800221847 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -67,39 +117,62 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F90F3032052DFAB00221847 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		3F90F3052052E15200221847 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		"Hermes::ActionCable::Product" /* ActionCable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ActionCable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Hermes::ActionCableTests::Product" /* ActionCableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionCableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Hermes::Hermes::Product" /* Hermes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Hermes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Hermes::HermesTests::Product" /* HermesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HermesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_12 /* HermesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesTests.swift; sourceTree = "<group>"; };
-		OBJ_15 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/jeremy/Projects/Hermes/.build/checkouts/Starscream.git--8239888854797068891/Package.swift"; sourceTree = "<group>"; };
-		OBJ_16 /* Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
-		OBJ_17 /* SSLSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
-		OBJ_18 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		OBJ_10 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		OBJ_11 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		OBJ_13 /* ActionCable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCable.swift; sourceTree = "<group>"; };
+		OBJ_16 /* ActionCableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCableTests.swift; sourceTree = "<group>"; };
+		OBJ_18 /* HermesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesTests.swift; sourceTree = "<group>"; };
+		OBJ_21 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/jeremy/Projects/Hermes/.build/checkouts/Starscream.git--8239888854797068891/Package.swift"; sourceTree = "<group>"; };
+		OBJ_22 /* Compression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compression.swift; sourceTree = "<group>"; };
+		OBJ_23 /* SSLSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		OBJ_24 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* Hermes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hermes.swift; sourceTree = "<group>"; };
 		"Starscream::Starscream::Product" /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_41 /* Frameworks */ = {
+		OBJ_49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_42 /* Hermes.framework in Frameworks */,
-				OBJ_43 /* Starscream.framework in Frameworks */,
+				OBJ_50 /* Hermes.framework in Frameworks */,
+				OBJ_51 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_53 /* Frameworks */ = {
+		OBJ_62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_54 /* Starscream.framework in Frameworks */,
+				OBJ_63 /* ActionCable.framework in Frameworks */,
+				OBJ_64 /* Hermes.framework in Frameworks */,
+				OBJ_65 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_63 /* Frameworks */ = {
+		OBJ_75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_76 /* Hermes.framework in Frameworks */,
+				OBJ_77 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_88 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -109,47 +182,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_10 /* Tests */ = {
+		OBJ_12 /* ActionCable */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_11 /* HermesTests */,
+				OBJ_13 /* ActionCable.swift */,
+			);
+			name = ActionCable;
+			path = Sources/ActionCable;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_14 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* ActionCableTests */,
+				OBJ_17 /* HermesTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_11 /* HermesTests */ = {
+		OBJ_15 /* ActionCableTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* HermesTests.swift */,
+				OBJ_16 /* ActionCableTests.swift */,
+			);
+			name = ActionCableTests;
+			path = Tests/ActionCableTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_17 /* HermesTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* HermesTests.swift */,
 			);
 			name = HermesTests;
 			path = Tests/HermesTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_13 /* Dependencies */ = {
+		OBJ_19 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* Starscream 3.0.4 */,
+				OBJ_20 /* Starscream 3.0.4 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_14 /* Starscream 3.0.4 */ = {
+		OBJ_20 /* Starscream 3.0.4 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_15 /* Package.swift */,
-				OBJ_16 /* Compression.swift */,
-				OBJ_17 /* SSLSecurity.swift */,
-				OBJ_18 /* WebSocket.swift */,
+				OBJ_21 /* Package.swift */,
+				OBJ_22 /* Compression.swift */,
+				OBJ_23 /* SSLSecurity.swift */,
+				OBJ_24 /* WebSocket.swift */,
 			);
 			name = "Starscream 3.0.4";
 			path = ".build/checkouts/Starscream.git--8239888854797068891/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_19 /* Products */ = {
+		OBJ_25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"Hermes::HermesTests::Product" /* HermesTests.xctest */,
+				"Hermes::ActionCableTests::Product" /* ActionCableTests.xctest */,
+				"Hermes::ActionCable::Product" /* ActionCable.framework */,
 				"Hermes::Hermes::Product" /* Hermes.framework */,
 				"Starscream::Starscream::Product" /* Starscream.framework */,
 			);
@@ -161,9 +255,9 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_10 /* Tests */,
-				OBJ_13 /* Dependencies */,
-				OBJ_19 /* Products */,
+				OBJ_14 /* Tests */,
+				OBJ_19 /* Dependencies */,
+				OBJ_25 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -172,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* Hermes */,
+				OBJ_12 /* ActionCable */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -180,8 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* Hermes.swift */,
-				3F90F3032052DFAB00221847 /* Request.swift */,
-				3F90F3052052E15200221847 /* WebSocket.swift */,
+				OBJ_10 /* Request.swift */,
+				OBJ_11 /* WebSocket.swift */,
 			);
 			name = Hermes;
 			path = Sources/Hermes;
@@ -190,18 +285,54 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"Hermes::Hermes" /* Hermes */ = {
+		"Hermes::ActionCable" /* ActionCable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_48 /* Build configuration list for PBXNativeTarget "Hermes" */;
+			buildConfigurationList = OBJ_70 /* Build configuration list for PBXNativeTarget "ActionCable" */;
 			buildPhases = (
-				3F90F3022051EA0400221847 /* Swiftlint */,
-				OBJ_51 /* Sources */,
-				OBJ_53 /* Frameworks */,
+				OBJ_73 /* Sources */,
+				OBJ_75 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_55 /* PBXTargetDependency */,
+				OBJ_78 /* PBXTargetDependency */,
+				OBJ_79 /* PBXTargetDependency */,
+			);
+			name = ActionCable;
+			productName = ActionCable;
+			productReference = "Hermes::ActionCable::Product" /* ActionCable.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Hermes::ActionCableTests" /* ActionCableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_57 /* Build configuration list for PBXNativeTarget "ActionCableTests" */;
+			buildPhases = (
+				OBJ_60 /* Sources */,
+				OBJ_62 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_66 /* PBXTargetDependency */,
+				OBJ_68 /* PBXTargetDependency */,
+				OBJ_69 /* PBXTargetDependency */,
+			);
+			name = ActionCableTests;
+			productName = ActionCableTests;
+			productReference = "Hermes::ActionCableTests::Product" /* ActionCableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Hermes::Hermes" /* Hermes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_80 /* Build configuration list for PBXNativeTarget "Hermes" */;
+			buildPhases = (
+				OBJ_83 /* Sources */,
+				OBJ_87 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_89 /* PBXTargetDependency */,
 			);
 			name = Hermes;
 			productName = Hermes;
@@ -210,16 +341,16 @@
 		};
 		"Hermes::HermesTests" /* HermesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "HermesTests" */;
+			buildConfigurationList = OBJ_44 /* Build configuration list for PBXNativeTarget "HermesTests" */;
 			buildPhases = (
-				OBJ_39 /* Sources */,
-				OBJ_41 /* Frameworks */,
+				OBJ_47 /* Sources */,
+				OBJ_49 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_44 /* PBXTargetDependency */,
-				OBJ_46 /* PBXTargetDependency */,
+				OBJ_52 /* PBXTargetDependency */,
+				OBJ_54 /* PBXTargetDependency */,
 			);
 			name = HermesTests;
 			productName = HermesTests;
@@ -228,9 +359,9 @@
 		};
 		"Hermes::SwiftPMPackageDescription" /* HermesPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_24 /* Build configuration list for PBXNativeTarget "HermesPackageDescription" */;
+			buildConfigurationList = OBJ_32 /* Build configuration list for PBXNativeTarget "HermesPackageDescription" */;
 			buildPhases = (
-				OBJ_27 /* Sources */,
+				OBJ_35 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -242,10 +373,10 @@
 		};
 		"Starscream::Starscream" /* Starscream */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_56 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildConfigurationList = OBJ_90 /* Build configuration list for PBXNativeTarget "Starscream" */;
 			buildPhases = (
-				OBJ_59 /* Sources */,
-				OBJ_63 /* Frameworks */,
+				OBJ_93 /* Sources */,
+				OBJ_97 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,9 +389,9 @@
 		};
 		"Starscream::SwiftPMPackageDescription" /* StarscreamPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_30 /* Build configuration list for PBXNativeTarget "StarscreamPackageDescription" */;
+			buildConfigurationList = OBJ_38 /* Build configuration list for PBXNativeTarget "StarscreamPackageDescription" */;
 			buildPhases = (
-				OBJ_33 /* Sources */,
+				OBJ_41 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -286,13 +417,15 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_19 /* Products */;
+			productRefGroup = OBJ_25 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				"Hermes::SwiftPMPackageDescription" /* HermesPackageDescription */,
 				"Starscream::SwiftPMPackageDescription" /* StarscreamPackageDescription */,
 				"Hermes::HermesTests" /* HermesTests */,
+				"Hermes::ActionCableTests" /* ActionCableTests */,
+				"Hermes::ActionCable" /* ActionCable */,
 				"Hermes::Hermes" /* Hermes */,
 				"Starscream::Starscream" /* Starscream */,
 				"Hermes::HermesPackageTests::ProductTarget" /* HermesPackageTests */,
@@ -300,107 +433,132 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3F90F3022051EA0400221847 /* Swiftlint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Swiftlint;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_27 /* Sources */ = {
+		OBJ_35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_28 /* Package.swift in Sources */,
+				OBJ_36 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_33 /* Sources */ = {
+		OBJ_41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_34 /* Package.swift in Sources */,
+				OBJ_42 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_39 /* Sources */ = {
+		OBJ_47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_40 /* HermesTests.swift in Sources */,
+				OBJ_48 /* HermesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_51 /* Sources */ = {
+		OBJ_60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_52 /* Hermes.swift in Sources */,
-				3F90F3062052E15200221847 /* WebSocket.swift in Sources */,
-				3F90F3042052DFAB00221847 /* Request.swift in Sources */,
+				OBJ_61 /* ActionCableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_59 /* Sources */ = {
+		OBJ_73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_60 /* Compression.swift in Sources */,
-				OBJ_61 /* SSLSecurity.swift in Sources */,
-				OBJ_62 /* WebSocket.swift in Sources */,
+				OBJ_74 /* ActionCable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_84 /* Hermes.swift in Sources */,
+				OBJ_85 /* Request.swift in Sources */,
+				OBJ_86 /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_94 /* Compression.swift in Sources */,
+				OBJ_95 /* SSLSecurity.swift in Sources */,
+				OBJ_96 /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_44 /* PBXTargetDependency */ = {
+		OBJ_102 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Hermes::ActionCableTests" /* ActionCableTests */;
+			targetProxy = 3F90F31E2053266800221847 /* PBXContainerItemProxy */;
+		};
+		OBJ_103 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Hermes::HermesTests" /* HermesTests */;
+			targetProxy = 3F90F31F2053266800221847 /* PBXContainerItemProxy */;
+		};
+		OBJ_52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Hermes::Hermes" /* Hermes */;
-			targetProxy = 3F90F2FE2051D84B00221847 /* PBXContainerItemProxy */;
+			targetProxy = 3F90F3192053266800221847 /* PBXContainerItemProxy */;
 		};
-		OBJ_46 /* PBXTargetDependency */ = {
+		OBJ_54 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Starscream::Starscream" /* Starscream */;
-			targetProxy = 3F90F2FF2051D84B00221847 /* PBXContainerItemProxy */;
+			targetProxy = 3F90F31A2053266800221847 /* PBXContainerItemProxy */;
 		};
-		OBJ_55 /* PBXTargetDependency */ = {
+		OBJ_66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "Starscream::Starscream" /* Starscream */;
-			targetProxy = 3F90F2FD2051D84B00221847 /* PBXContainerItemProxy */;
+			target = "Hermes::ActionCable" /* ActionCable */;
+			targetProxy = 3F90F31B2053266800221847 /* PBXContainerItemProxy */;
 		};
 		OBJ_68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "Hermes::HermesTests" /* HermesTests */;
-			targetProxy = 3F90F3002051D84B00221847 /* PBXContainerItemProxy */;
+			target = "Hermes::Hermes" /* Hermes */;
+			targetProxy = 3F90F31C2053266800221847 /* PBXContainerItemProxy */;
+		};
+		OBJ_69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Starscream::Starscream" /* Starscream */;
+			targetProxy = 3F90F31D2053266800221847 /* PBXContainerItemProxy */;
+		};
+		OBJ_78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Hermes::Hermes" /* Hermes */;
+			targetProxy = 3F90F3162053266800221847 /* PBXContainerItemProxy */;
+		};
+		OBJ_79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Starscream::Starscream" /* Starscream */;
+			targetProxy = 3F90F3182053266800221847 /* PBXContainerItemProxy */;
+		};
+		OBJ_89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Starscream::Starscream" /* Starscream */;
+			targetProxy = 3F90F3172053266800221847 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_25 /* Debug */ = {
+		OBJ_100 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
 			};
 			name = Debug;
 		};
-		OBJ_26 /* Release */ = {
+		OBJ_101 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
 			};
 			name = Release;
 		};
@@ -427,63 +585,29 @@
 			};
 			name = Debug;
 		};
-		OBJ_31 /* Debug */ = {
+		OBJ_33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+			};
+			name = Debug;
+		};
+		OBJ_34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+			};
+			name = Release;
+		};
+		OBJ_39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
 			};
 			name = Debug;
-		};
-		OBJ_32 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-			};
-			name = Release;
-		};
-		OBJ_37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
-					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
-				);
-				INFOPLIST_FILE = Hermes.xcodeproj/HermesTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = HermesTests;
-			};
-			name = Debug;
-		};
-		OBJ_38 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
-					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
-				);
-				INFOPLIST_FILE = Hermes.xcodeproj/HermesTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				TARGET_NAME = HermesTests;
-			};
-			name = Release;
 		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -506,7 +630,149 @@
 			};
 			name = Release;
 		};
-		OBJ_49 /* Debug */ = {
+		OBJ_40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+			};
+			name = Release;
+		};
+		OBJ_45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/HermesTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = HermesTests;
+			};
+			name = Debug;
+		};
+		OBJ_46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/HermesTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = HermesTests;
+			};
+			name = Release;
+		};
+		OBJ_58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/ActionCableTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = ActionCableTests;
+			};
+			name = Debug;
+		};
+		OBJ_59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/ActionCableTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = ActionCableTests;
+			};
+			name = Release;
+		};
+		OBJ_71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/ActionCable_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ActionCable;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = ActionCable;
+			};
+			name = Debug;
+		};
+		OBJ_72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/common-crypto-spm--132958532151328779",
+					"$(SRCROOT)/.build/checkouts/zlib-spm.git-7042465659040932026",
+				);
+				INFOPLIST_FILE = Hermes.xcodeproj/ActionCable_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ActionCable;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = ActionCable;
+			};
+			name = Release;
+		};
+		OBJ_81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -531,7 +797,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_50 /* Release */ = {
+		OBJ_82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -556,7 +822,7 @@
 			};
 			name = Release;
 		};
-		OBJ_57 /* Debug */ = {
+		OBJ_91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -581,7 +847,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_58 /* Release */ = {
+		OBJ_92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -603,18 +869,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGET_NAME = Starscream;
-			};
-			name = Release;
-		};
-		OBJ_66 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
 			};
 			name = Release;
 		};
@@ -630,56 +884,74 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_24 /* Build configuration list for PBXNativeTarget "HermesPackageDescription" */ = {
+		OBJ_32 /* Build configuration list for PBXNativeTarget "HermesPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_25 /* Debug */,
-				OBJ_26 /* Release */,
+				OBJ_33 /* Debug */,
+				OBJ_34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_30 /* Build configuration list for PBXNativeTarget "StarscreamPackageDescription" */ = {
+		OBJ_38 /* Build configuration list for PBXNativeTarget "StarscreamPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_31 /* Debug */,
-				OBJ_32 /* Release */,
+				OBJ_39 /* Debug */,
+				OBJ_40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_36 /* Build configuration list for PBXNativeTarget "HermesTests" */ = {
+		OBJ_44 /* Build configuration list for PBXNativeTarget "HermesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_37 /* Debug */,
-				OBJ_38 /* Release */,
+				OBJ_45 /* Debug */,
+				OBJ_46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_48 /* Build configuration list for PBXNativeTarget "Hermes" */ = {
+		OBJ_57 /* Build configuration list for PBXNativeTarget "ActionCableTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_49 /* Debug */,
-				OBJ_50 /* Release */,
+				OBJ_58 /* Debug */,
+				OBJ_59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_56 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+		OBJ_70 /* Build configuration list for PBXNativeTarget "ActionCable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_57 /* Debug */,
-				OBJ_58 /* Release */,
+				OBJ_71 /* Debug */,
+				OBJ_72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_65 /* Build configuration list for PBXAggregateTarget "HermesPackageTests" */ = {
+		OBJ_80 /* Build configuration list for PBXNativeTarget "Hermes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_66 /* Debug */,
-				OBJ_67 /* Release */,
+				OBJ_81 /* Debug */,
+				OBJ_82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_90 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_91 /* Debug */,
+				OBJ_92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_99 /* Build configuration list for PBXAggregateTarget "HermesPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_100 /* Debug */,
+				OBJ_101 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
