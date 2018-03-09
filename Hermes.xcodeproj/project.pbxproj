@@ -22,6 +22,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		3F90F326205329F900221847 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F320205329D400221847 /* Channel.swift */; };
+		3F90F327205329FD00221847 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F322205329E000221847 /* Instruction.swift */; };
+		3F90F32820532A0100221847 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F324205329EF00221847 /* Identifier.swift */; };
+		3F90F32A20532A1900221847 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F32920532A1900221847 /* MessageType.swift */; };
+		3F90F32C20532A2500221847 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F32B20532A2500221847 /* Command.swift */; };
+		3F90F32E20532A3400221847 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F32D20532A3400221847 /* Status.swift */; };
 		OBJ_36 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Package.swift */; };
 		OBJ_48 /* HermesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* HermesTests.swift */; };
@@ -117,6 +123,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F90F320205329D400221847 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		3F90F322205329E000221847 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
+		3F90F324205329EF00221847 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		3F90F32920532A1900221847 /* MessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
+		3F90F32B20532A2500221847 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		3F90F32D20532A3400221847 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		"Hermes::ActionCable::Product" /* ActionCable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ActionCable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Hermes::ActionCableTests::Product" /* ActionCableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionCableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Hermes::Hermes::Product" /* Hermes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Hermes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,10 +194,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F90F32F2053399F00221847 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F90F320205329D400221847 /* Channel.swift */,
+				3F90F322205329E000221847 /* Instruction.swift */,
+				3F90F324205329EF00221847 /* Identifier.swift */,
+				3F90F32920532A1900221847 /* MessageType.swift */,
+				3F90F32B20532A2500221847 /* Command.swift */,
+				3F90F32D20532A3400221847 /* Status.swift */,
+			);
+			path = Models;
+			sourceTree = SOURCE_ROOT;
+		};
 		OBJ_12 /* ActionCable */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_13 /* ActionCable.swift */,
+				3F90F32F2053399F00221847 /* Models */,
 			);
 			name = ActionCable;
 			path = Sources/ActionCable;
@@ -470,7 +496,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				3F90F327205329FD00221847 /* Instruction.swift in Sources */,
 				OBJ_74 /* ActionCable.swift in Sources */,
+				3F90F32E20532A3400221847 /* Status.swift in Sources */,
+				3F90F32820532A0100221847 /* Identifier.swift in Sources */,
+				3F90F32A20532A1900221847 /* MessageType.swift in Sources */,
+				3F90F326205329F900221847 /* Channel.swift in Sources */,
+				3F90F32C20532A2500221847 /* Command.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
