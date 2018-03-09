@@ -20,8 +20,8 @@ public protocol WebSocket {
     func write(data: Data)
 }
 
-class InternalWebSocket: Starscream.WebSocket {
-    required init?(request: Request) {
+public class HermesWebSocket: Starscream.WebSocket {
+    public required init?(request: Request) {
         guard let request = request as? URLRequest else {
             return nil
         }
@@ -30,4 +30,4 @@ class InternalWebSocket: Starscream.WebSocket {
     }
 }
 
-extension InternalWebSocket: WebSocket {}
+extension HermesWebSocket: WebSocket {}

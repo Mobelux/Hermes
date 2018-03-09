@@ -13,16 +13,11 @@ public typealias ConnectHandler = () -> ()
 public typealias DisconnectHandler = (Error?) -> ()
 public typealias DataHandler = (Data) -> ()
 
-open class Hermes<WebSocketType: WebSocket> {
-    internal var socket: WebSocketType
+open class Hermes {
+    internal var socket: WebSocket
 
-    public init?(request: Request) {
-        guard let socket = WebSocketType(request: request) else {
-            return nil
-        }
-
+    public init(socket: WebSocket) {
         self.socket = socket
-
     }
 
     public var connectHandler: ConnectHandler? {
