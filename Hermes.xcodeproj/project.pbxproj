@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		3F90F3042052DFAB00221847 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F3032052DFAB00221847 /* Request.swift */; };
+		3F90F3062052E15200221847 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F3052052E15200221847 /* WebSocket.swift */; };
 		OBJ_28 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_34 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Package.swift */; };
 		OBJ_40 /* HermesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* HermesTests.swift */; };
@@ -65,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F90F3032052DFAB00221847 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		3F90F3052052E15200221847 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		"Hermes::Hermes::Product" /* Hermes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Hermes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Hermes::HermesTests::Product" /* HermesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HermesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* HermesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesTests.swift; sourceTree = "<group>"; };
@@ -176,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* Hermes.swift */,
+				3F90F3032052DFAB00221847 /* Request.swift */,
+				3F90F3052052E15200221847 /* WebSocket.swift */,
 			);
 			name = Hermes;
 			path = Sources/Hermes;
@@ -341,6 +347,8 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_52 /* Hermes.swift in Sources */,
+				3F90F3062052E15200221847 /* WebSocket.swift in Sources */,
+				3F90F3042052DFAB00221847 /* Request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
