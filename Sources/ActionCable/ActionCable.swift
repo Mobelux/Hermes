@@ -69,21 +69,24 @@ private extension ActionCable {
 
     func handle(data: Data) {
         if let status: Status = object(data: data) {
-            switch status.type {
-            case .confirmation:
-                channels[status.identifier.channel.name] = status.identifier.channel
-
-                subscribedHandler?(status.identifier.channel)
-                subscribedHandler = nil
-            case .ping: break
-            case .rejection:
-                rejectedHandler?()
-            case .welcome: break
-            }
+            handle(status: status)
         } else if let instruction: Instruction = object(data: data) {
             instructionHandler?(instruction)
         } else {
             debugPrint("\(#function) - Invalid data structure")
+        }
+    }
+
+    func handle(status: Status) {
+        switch status.type {
+        case .confirmation:
+            channels[status.identifier.channel.name] = status.identifier.channel
+
+            subscribedHandler?(status.identifier.channel)
+            subscribedHandler = nil
+        case .rejection:
+            rejectedHandler?()
+        case .welcome, .ping: break
         }
     }
 
