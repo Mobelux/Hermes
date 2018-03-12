@@ -29,6 +29,7 @@
 		3F90F32C20532A2500221847 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F32B20532A2500221847 /* Command.swift */; };
 		3F90F32E20532A3400221847 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F32D20532A3400221847 /* Status.swift */; };
 		3F90F3322056F06500221847 /* MockWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F3302056EE9A00221847 /* MockWebSocket.swift */; };
+		3F90F3342056F82C00221847 /* MockSocketWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F3332056F82C00221847 /* MockSocketWrapper.swift */; };
 		OBJ_36 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Package.swift */; };
 		OBJ_48 /* HermesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* HermesTests.swift */; };
@@ -131,6 +132,7 @@
 		3F90F32B20532A2500221847 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		3F90F32D20532A3400221847 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		3F90F3302056EE9A00221847 /* MockWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebSocket.swift; sourceTree = "<group>"; };
+		3F90F3332056F82C00221847 /* MockSocketWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSocketWrapper.swift; sourceTree = "<group>"; };
 		"Hermes::ActionCable::Product" /* ActionCable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ActionCable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Hermes::ActionCableTests::Product" /* ActionCableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ActionCableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Hermes::Hermes::Product" /* Hermes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Hermes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_16 /* ActionCableTests.swift */,
+				3F90F3332056F82C00221847 /* MockSocketWrapper.swift */,
 			);
 			name = ActionCableTests;
 			path = Tests/ActionCableTests;
@@ -492,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				3F90F3342056F82C00221847 /* MockSocketWrapper.swift in Sources */,
 				OBJ_61 /* ActionCableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

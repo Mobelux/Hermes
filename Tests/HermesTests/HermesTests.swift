@@ -2,7 +2,7 @@ import XCTest
 @testable import Hermes
 
 class HermesTests: XCTestCase {
-    let hermes = Hermes(socket: MockWebSocket(request: URLRequest(url: URL(string: "http://google.com")!))!)
+    let hermes = Hermes(socket: MockWebSocket(request: URLRequest(url: URL(string: "http://mobelux.com")!))!)
 
     func testConnect() {
         let expectation = self.expectation(description: "Connection")
