@@ -11,9 +11,9 @@ import Starscream
 public protocol WebSocket {
     init?(request: Request)
 
-    var onConnect: (() -> Void)? { get set }
-    var onDisconnect: ((Error?) -> Void)? { get set }
-    var onData: ((Data) -> Void)? { get set }
+    var onConnect: (() -> ())? { get set }
+    var onDisconnect: ((Error?) -> ())? { get set }
+    var onData: ((Data) -> ())? { get set }
 
     func connect()
     func disconnect()
