@@ -13,9 +13,9 @@ public typealias UnsubscribedHandler = (Channel) -> ()
 public typealias RejectedHandler = () -> ()
 public typealias InstructionHandler = (Instruction) -> ()
 
-open class ActionCable<WebSocketType: WebSocket> {
+open class ActionCable<WrapperType: WebSocketWrapper> {
     // MARK: - Internal
-    var hermes: Hermes
+    var hermes: WrapperType
     var channels: [String: Channel] = [:]
     var subscribedHandler: SubscribedHandler?
     var unsubscribedHandler: UnsubscribedHandler?
@@ -26,11 +26,11 @@ open class ActionCable<WebSocketType: WebSocket> {
     public var instructionHandler: InstructionHandler?
 
     public init?(request: Request) {
-        guard let socket = WebSocketType(request: request) else {
+        guard let socket = HermesWebSocket(request: request) else {
             return nil
         }
 
-        hermes = Hermes(socket: socket)
+        hermes = WrapperType(socket: socket)
         hermes.dataHandler = handle
     }
 }
@@ -53,7 +53,6 @@ public extension ActionCable {
 
     func unsubscribe(_ channelName: String) throws {
         channels.removeValue(forKey: channelName)
-
         try write(ActionCable.unsubscribeInstruction(channelName), to: hermes)
     }
 
@@ -63,7 +62,7 @@ public extension ActionCable {
 }
 
 private extension ActionCable {
-    func write(_ instruction: Instruction, to hermes: Hermes) throws {
+    func write(_ instruction: Instruction, to hermes: WrapperType) throws {
         let data = try JSONEncoder().encode(instruction)
         hermes.write(data)
     }

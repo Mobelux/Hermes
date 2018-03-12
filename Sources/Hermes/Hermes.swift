@@ -13,10 +13,22 @@ public typealias ConnectHandler = () -> ()
 public typealias DisconnectHandler = (Error?) -> ()
 public typealias DataHandler = (Data) -> ()
 
-open class Hermes {
+public protocol WebSocketWrapper {
+    init(socket: WebSocket)
+
+    var connectHandler: ConnectHandler? { get set }
+    var disconnectHandler: DisconnectHandler? { get set }
+    var dataHandler: DataHandler? { get set }
+
+    func write(_ data: Data)
+    func connect()
+    func disconnect()
+}
+
+open class Hermes: WebSocketWrapper {
     internal var socket: WebSocket
 
-    public init(socket: WebSocket) {
+    public required init(socket: WebSocket) {
         self.socket = socket
     }
 
