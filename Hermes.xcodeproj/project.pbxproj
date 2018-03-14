@@ -28,6 +28,7 @@
 		3F783EFA2059A7F00090C9F5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783EF02059A7F00090C9F5 /* Request.swift */; };
 		3F783EFB2059A7F00090C9F5 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783EF12059A7F00090C9F5 /* WebSocket.swift */; };
 		3F783F0C2059A8270090C9F5 /* Hermes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F783F0A2059A8270090C9F5 /* Hermes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F92FD162059AF4500AA9CAF /* Hermes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4E3E6C2059A6C900F59FFA /* Hermes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3F4E3E6B2059A6C900F59FFA;
 			remoteInfo = Hermes;
+		};
+		3F92FD192059AF4F00AA9CAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F4E3E632059A6C900F59FFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F4E3E6B2059A6C900F59FFA;
+			remoteInfo = Hermes;
+		};
+		3F92FD1B2059AF5B00AA9CAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F0286D82059AB5100801E92 /* Starscream.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 33CCF0841F5DDC030099B092;
+			remoteInfo = Starscream;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -92,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F92FD162059AF4500AA9CAF /* Hermes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +291,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3F92FD1A2059AF4F00AA9CAF /* PBXTargetDependency */,
 			);
 			name = ActionCable;
 			productName = ActionCable;
@@ -311,6 +328,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3F92FD1C2059AF5B00AA9CAF /* PBXTargetDependency */,
 			);
 			name = Hermes;
 			productName = Hermes;
@@ -493,6 +511,16 @@
 			isa = PBXTargetDependency;
 			target = 3F4E3E6B2059A6C900F59FFA /* Hermes */;
 			targetProxy = 3F4E3E772059A6CA00F59FFA /* PBXContainerItemProxy */;
+		};
+		3F92FD1A2059AF4F00AA9CAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F4E3E6B2059A6C900F59FFA /* Hermes */;
+			targetProxy = 3F92FD192059AF4F00AA9CAF /* PBXContainerItemProxy */;
+		};
+		3F92FD1C2059AF5B00AA9CAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			targetProxy = 3F92FD1B2059AF5B00AA9CAF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
