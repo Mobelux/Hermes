@@ -22,12 +22,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		3F90F326205329F900221847 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F320205329D400221847 /* Channel.swift */; };
-		3F90F327205329FD00221847 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F322205329E000221847 /* Instruction.swift */; };
-		3F90F32820532A0100221847 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F324205329EF00221847 /* Identifier.swift */; };
-		3F90F32A20532A1900221847 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F32920532A1900221847 /* MessageType.swift */; };
-		3F90F32C20532A2500221847 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F32B20532A2500221847 /* Command.swift */; };
-		3F90F32E20532A3400221847 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F32D20532A3400221847 /* Status.swift */; };
+		3F55E14E2059995800DE9C08 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55E1482059995800DE9C08 /* Channel.swift */; };
+		3F55E14F2059995800DE9C08 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55E1492059995800DE9C08 /* Instruction.swift */; };
+		3F55E1502059995800DE9C08 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55E14A2059995800DE9C08 /* Command.swift */; };
+		3F55E1512059995800DE9C08 /* MessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55E14B2059995800DE9C08 /* MessageType.swift */; };
+		3F55E1522059995800DE9C08 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55E14C2059995800DE9C08 /* Status.swift */; };
+		3F55E1532059995800DE9C08 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55E14D2059995800DE9C08 /* Identifier.swift */; };
 		3F90F3322056F06500221847 /* MockWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F3302056EE9A00221847 /* MockWebSocket.swift */; };
 		3F90F3342056F82C00221847 /* MockSocketWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90F3332056F82C00221847 /* MockSocketWrapper.swift */; };
 		OBJ_36 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
@@ -125,12 +125,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F90F320205329D400221847 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
-		3F90F322205329E000221847 /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
-		3F90F324205329EF00221847 /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
-		3F90F32920532A1900221847 /* MessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
-		3F90F32B20532A2500221847 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
-		3F90F32D20532A3400221847 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		3F55E1482059995800DE9C08 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		3F55E1492059995800DE9C08 /* Instruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
+		3F55E14A2059995800DE9C08 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		3F55E14B2059995800DE9C08 /* MessageType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageType.swift; sourceTree = "<group>"; };
+		3F55E14C2059995800DE9C08 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		3F55E14D2059995800DE9C08 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		3F90F3302056EE9A00221847 /* MockWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebSocket.swift; sourceTree = "<group>"; };
 		3F90F3332056F82C00221847 /* MockSocketWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSocketWrapper.swift; sourceTree = "<group>"; };
 		"Hermes::ActionCable::Product" /* ActionCable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ActionCable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,24 +198,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F90F32F2053399F00221847 /* Models */ = {
+		3F55E1472059995800DE9C08 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3F90F320205329D400221847 /* Channel.swift */,
-				3F90F322205329E000221847 /* Instruction.swift */,
-				3F90F324205329EF00221847 /* Identifier.swift */,
-				3F90F32920532A1900221847 /* MessageType.swift */,
-				3F90F32B20532A2500221847 /* Command.swift */,
-				3F90F32D20532A3400221847 /* Status.swift */,
+				3F55E1482059995800DE9C08 /* Channel.swift */,
+				3F55E1492059995800DE9C08 /* Instruction.swift */,
+				3F55E14A2059995800DE9C08 /* Command.swift */,
+				3F55E14B2059995800DE9C08 /* MessageType.swift */,
+				3F55E14C2059995800DE9C08 /* Status.swift */,
+				3F55E14D2059995800DE9C08 /* Identifier.swift */,
 			);
 			path = Models;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		OBJ_12 /* ActionCable */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_13 /* ActionCable.swift */,
-				3F90F32F2053399F00221847 /* Models */,
+				3F55E1472059995800DE9C08 /* Models */,
 			);
 			name = ActionCable;
 			path = Sources/ActionCable;
@@ -282,7 +282,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -291,7 +291,6 @@
 				OBJ_19 /* Dependencies */,
 				OBJ_25 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -448,7 +447,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_25 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -504,13 +503,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3F90F327205329FD00221847 /* Instruction.swift in Sources */,
+				3F55E14F2059995800DE9C08 /* Instruction.swift in Sources */,
 				OBJ_74 /* ActionCable.swift in Sources */,
-				3F90F32E20532A3400221847 /* Status.swift in Sources */,
-				3F90F32820532A0100221847 /* Identifier.swift in Sources */,
-				3F90F32A20532A1900221847 /* MessageType.swift in Sources */,
-				3F90F326205329F900221847 /* Channel.swift in Sources */,
-				3F90F32C20532A2500221847 /* Command.swift in Sources */,
+				3F55E14E2059995800DE9C08 /* Channel.swift in Sources */,
+				3F55E1532059995800DE9C08 /* Identifier.swift in Sources */,
+				3F55E1512059995800DE9C08 /* MessageType.swift in Sources */,
+				3F55E1502059995800DE9C08 /* Command.swift in Sources */,
+				3F55E1522059995800DE9C08 /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
