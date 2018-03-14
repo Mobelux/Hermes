@@ -19,15 +19,11 @@
 		3F0286CE2059AAEE00801E92 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783EED2059A7F00090C9F5 /* Identifier.swift */; };
 		3F0286CF2059AAF600801E92 /* ActionCableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783EFF2059A7F80090C9F5 /* ActionCableTests.swift */; };
 		3F0286D02059AAF600801E92 /* MockSocketWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783F002059A7F80090C9F5 /* MockSocketWrapper.swift */; };
-		3F0286D32059AB1800801E92 /* ActionCable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0286D12059AB1800801E92 /* ActionCable.h */; };
-		3F0286D42059AB1800801E92 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F0286D22059AB1800801E92 /* Info.plist */; };
-		3F0286D52059AB2400801E92 /* ActionCable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F0286D12059AB1800801E92 /* ActionCable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F0286E22059AB6300801E92 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0286DE2059AB5100801E92 /* Starscream.framework */; };
 		3F4E3E762059A6CA00F59FFA /* Hermes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4E3E6C2059A6C900F59FFA /* Hermes.framework */; };
 		3F783EF92059A7F00090C9F5 /* Hermes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783EEF2059A7F00090C9F5 /* Hermes.swift */; };
 		3F783EFA2059A7F00090C9F5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783EF02059A7F00090C9F5 /* Request.swift */; };
 		3F783EFB2059A7F00090C9F5 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783EF12059A7F00090C9F5 /* WebSocket.swift */; };
-		3F783F0C2059A8270090C9F5 /* Hermes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F783F0A2059A8270090C9F5 /* Hermes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F92FD162059AF4500AA9CAF /* Hermes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4E3E6C2059A6C900F59FFA /* Hermes.framework */; };
 /* End PBXBuildFile section */
 
@@ -258,26 +254,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		3F0286AE2059AA3000801E92 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F0286D52059AB2400801E92 /* ActionCable.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F4E3E692059A6C900F59FFA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F0286D32059AB1800801E92 /* ActionCable.h in Headers */,
-				3F783F0C2059A8270090C9F5 /* Hermes.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		3F0286B02059AA3000801E92 /* ActionCable */ = {
 			isa = PBXNativeTarget;
@@ -285,8 +261,6 @@
 			buildPhases = (
 				3F0286AC2059AA3000801E92 /* Sources */,
 				3F0286AD2059AA3000801E92 /* Frameworks */,
-				3F0286AE2059AA3000801E92 /* Headers */,
-				3F0286AF2059AA3000801E92 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -322,8 +296,6 @@
 			buildPhases = (
 				3F4E3E672059A6C900F59FFA /* Sources */,
 				3F4E3E682059A6C900F59FFA /* Frameworks */,
-				3F4E3E692059A6C900F59FFA /* Headers */,
-				3F4E3E6A2059A6C900F59FFA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -425,25 +397,10 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3F0286AF2059AA3000801E92 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3F0286B72059AA3000801E92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F4E3E6A2059A6C900F59FFA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F0286D42059AB1800801E92 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
