@@ -79,7 +79,6 @@
 		3F783EEF2059A7F00090C9F5 /* Hermes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hermes.swift; sourceTree = "<group>"; };
 		3F783EF02059A7F00090C9F5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		3F783EF12059A7F00090C9F5 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
-		3F783EFD2059A7F80090C9F5 /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		3F783EFF2059A7F80090C9F5 /* ActionCableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionCableTests.swift; sourceTree = "<group>"; };
 		3F783F002059A7F80090C9F5 /* MockSocketWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSocketWrapper.swift; sourceTree = "<group>"; };
 		3F783F022059A7F80090C9F5 /* MockWebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockWebSocket.swift; sourceTree = "<group>"; };
@@ -217,7 +216,6 @@
 		3F783EFC2059A7F80090C9F5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3F783EFD2059A7F80090C9F5 /* LinuxMain.swift */,
 				3F783EFE2059A7F80090C9F5 /* ActionCableTests */,
 				3F783F012059A7F80090C9F5 /* HermesTests */,
 			);
