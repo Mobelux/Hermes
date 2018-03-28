@@ -38,6 +38,7 @@ class ActionCableTests: XCTestCase {
         }
          waitForExpectations(timeout: 1.0, handler: nil)
     }
+    
     func testUnsubscribe() {
         let expecation = self.expectation(description: "Unsubscribe")
         let channelName = "channelName"
@@ -50,6 +51,7 @@ class ActionCableTests: XCTestCase {
         }
           waitForExpectations(timeout: 1.0, handler: nil)
     }
+    
     func testSend(){
         let expectation = self.expectation(description: "Send")
         let instruction = Instruction(command: .message, identifier: Identifier(channel: Channel(name: "channelName")), data: nil)
@@ -62,4 +64,5 @@ class ActionCableTests: XCTestCase {
         }
          waitForExpectations(timeout: 1.0, handler: nil)
     }
+    
 }
