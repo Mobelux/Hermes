@@ -38,4 +38,16 @@ class ActionCableTests: XCTestCase {
         }
          waitForExpectations(timeout: 1.0, handler: nil)
     }
+    func testUnsubscribe() {
+        let expecation = self.expectation(description: "Unsubscribe")
+        let channelName = "channelName"
+       
+        do {
+            try actionCable.unsubscribe(channelName)
+            expecation.fulfill()
+        } catch {
+            print(error.localizedDescription)
+        }
+          waitForExpectations(timeout: 1.0, handler: nil)
+    }
 }
