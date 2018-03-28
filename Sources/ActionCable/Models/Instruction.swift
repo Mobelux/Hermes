@@ -7,8 +7,13 @@
 
 import Foundation
 
-public struct Instruction: Codable {
+public struct Instruction: Codable, Equatable {
+    public static func ==(lhs: Instruction, rhs: Instruction) -> Bool {
+        return lhs.command == rhs.command
+    }
     let command: Command
     let identifier: Identifier
     let data: Data?
+
 }
+
