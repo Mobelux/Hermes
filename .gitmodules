@@ -1,0 +1,3 @@
+[submodule "Submodules/Starscream"]
+	path = Submodules/Starscream
+	url = git@github.com:jagreenwood/Starscream.git
