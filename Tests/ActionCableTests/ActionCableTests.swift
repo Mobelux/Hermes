@@ -24,4 +24,18 @@ class ActionCableTests: XCTestCase {
 
         waitForExpectations(timeout: 1.0, handler: nil)
     }
+    
+    func testSubscribe() {
+        let expectation = self.expectation(description: "Subscribe")
+        let channelName = "channelName"
+        
+        do {
+            try actionCable.subscribe(channelName, handler: { _ in
+              expectation.fulfill()
+            })
+        } catch {
+            print(error.localizedDescription)
+        }
+         waitForExpectations(timeout: 1.0, handler: nil)
+    }
 }
