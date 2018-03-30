@@ -18,6 +18,9 @@
 		3F0286CF2059AAF600801E92 /* ActionCableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783EFF2059A7F80090C9F5 /* ActionCableTests.swift */; };
 		3F0286D02059AAF600801E92 /* MockSocketWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783F002059A7F80090C9F5 /* MockSocketWrapper.swift */; };
 		3F0286E22059AB6300801E92 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0286DE2059AB5100801E92 /* Starscream.framework */; };
+		3F6956F0206E91EC008EB885 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0286DE2059AB5100801E92 /* Starscream.framework */; };
+		3F6956F1206E9236008EB885 /* Hermes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4E3E6C2059A6C900F59FFA /* Hermes.framework */; };
+		3F6956F2206E9236008EB885 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0286DE2059AB5100801E92 /* Starscream.framework */; };
 		3F783EF92059A7F00090C9F5 /* Hermes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783EEF2059A7F00090C9F5 /* Hermes.swift */; };
 		3F783EFA2059A7F00090C9F5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783EF02059A7F00090C9F5 /* Request.swift */; };
 		3F783EFB2059A7F00090C9F5 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783EF12059A7F00090C9F5 /* WebSocket.swift */; };
@@ -111,6 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6956F1206E9236008EB885 /* Hermes.framework in Frameworks */,
+				3F6956F2206E9236008EB885 /* Starscream.framework in Frameworks */,
 				3F0286BA2059AA3000801E92 /* ActionCable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6956F0206E91EC008EB885 /* Starscream.framework in Frameworks */,
 				3FE66D4F2059C3B5009235E8 /* Hermes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
