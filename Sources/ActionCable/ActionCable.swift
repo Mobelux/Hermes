@@ -13,7 +13,7 @@ public typealias UnsubscribedHandler = (Channel) -> ()
 public typealias RejectedHandler = () -> ()
 public typealias InstructionHandler = (Instruction) -> ()
 
-open class ActionCable<WrapperType: WebSocketWrapper> {
+open class  ActionCable<WrapperType: WebSocketWrapper> {
     // MARK: - Internal
     var hermes: WrapperType
     var channels: [String: Channel] = [:]
@@ -29,7 +29,6 @@ open class ActionCable<WrapperType: WebSocketWrapper> {
         guard let socket = HermesWebSocket(request: request) else {
             return nil
         }
-
         hermes = WrapperType(socket: socket)
         hermes.dataHandler = handle
     }
@@ -57,7 +56,7 @@ public extension ActionCable {
     }
 
     func send(_ instruction: Instruction) throws {
-        try write(instruction, to: hermes)
+        try write(ActionCable.sendInstruction(instruction), to: hermes)
     }
 }
 
@@ -68,20 +67,22 @@ private extension ActionCable {
     }
 
     func handle(data: Data) {
-        if let status: Status = object(data: data) {
-            handle(status: status)
-        } else if let instruction: Instruction = object(data: data) {
-            instructionHandler?(instruction)
+        if let instruction: Instruction = object(data: data) {
+                switch instruction.command {
+                case .subscribe:
+                    handle(status: Status(type: .confirmation, identifier: Identifier(channel: Channel(name: "channelName")), data: data))
+                default: 
+                    break
+            }
         } else {
             debugPrint("\(#function) - Invalid data structure")
         }
     }
-
+    
     func handle(status: Status) {
         switch status.type {
         case .confirmation:
             channels[status.identifier.channel.name] = status.identifier.channel
-
             subscribedHandler?(status.identifier.channel)
             subscribedHandler = nil
         case .rejection:
@@ -91,10 +92,12 @@ private extension ActionCable {
     }
 
     func object<T: Codable>(data: Data) -> T? {
+        print("data is: \(data)")
         do {
             let decoder = JSONDecoder()
             return try decoder.decode(T.self, from: data)
         } catch {
+            print("error: \(error.localizedDescription)")
             return nil
         }
     }
@@ -106,4 +109,10 @@ private extension ActionCable {
     static func unsubscribeInstruction(_ channelName: String) -> Instruction {
         return Instruction(command: .unsubscribe, identifier: Identifier(channel: Channel(name: channelName)), data: nil)
     }
+    
+    static func sendInstruction(_ instruction: Instruction) -> Instruction {
+        return Instruction(command: .message, identifier: Identifier(channel: Channel(name: instruction.identifier.channel.name)), data: nil)
+    }
+
+
 }
