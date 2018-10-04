@@ -11,6 +11,7 @@ import Starscream
 public protocol WebSocket {
     init?(request: Request)
 
+    var isConnected: Bool { get }
     var onConnect: (() -> ())? { get set }
     var onDisconnect: ((Error?) -> ())? { get set }
     var onData: ((Data) -> ())? { get set }
