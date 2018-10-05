@@ -12,6 +12,7 @@ import Starscream
 public typealias ConnectHandler = () -> ()
 public typealias DisconnectHandler = (Error?) -> ()
 public typealias DataHandler = (Data) -> ()
+public typealias TextHandler = (String) -> ()
 
 public protocol WebSocketWrapper {
     init(socket: WebSocket?)
@@ -19,6 +20,7 @@ public protocol WebSocketWrapper {
     var connectHandler: ConnectHandler? { get set }
     var disconnectHandler: DisconnectHandler? { get set }
     var dataHandler: DataHandler? { get set }
+    var textHandler: TextHandler? { get set }
 
     func write(_ data: Data)
     func connect()
@@ -47,6 +49,12 @@ open class Hermes: WebSocketWrapper {
     public var dataHandler: DataHandler? {
         didSet {
             socket?.onData = dataHandler
+        }
+    }
+
+    public var textHandler: TextHandler? {
+        didSet {
+            socket?.onText = textHandler
         }
     }
 }

@@ -15,6 +15,7 @@ public protocol WebSocket {
     var onConnect: (() -> ())? { get set }
     var onDisconnect: ((Error?) -> ())? { get set }
     var onData: ((Data) -> ())? { get set }
+    var onText: ((String) -> Void)? { get set }
 
     func connect()
     func disconnect()
