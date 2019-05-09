@@ -377,7 +377,7 @@
 					};
 					3F4E3E6B2059A6C900F59FFA = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 					3FE66D492059C3B5009235E8 = {
@@ -730,7 +730,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -753,7 +753,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
