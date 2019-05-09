@@ -368,6 +368,7 @@
 				TargetAttributes = {
 					3F0286B02059AA3000801E92 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 					};
 					3F0286B82059AA3000801E92 = {
@@ -376,7 +377,7 @@
 					};
 					3F4E3E6B2059A6C900F59FFA = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 					};
 					3FE66D492059C3B5009235E8 = {
