@@ -5,6 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "Hermes",
+    products: [
+        // Products define the executables and libraries produced by a package, and make them visible to other packages.
+        .library(name: "Hermes", targets: ["Hermes"]),
+        .library(name: "ActionCable", targets: ["ActionCable"])
+    ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
          .package(url: "https://github.com/daltoniam/Starscream.git", from: "3.0.0")
