@@ -9,6 +9,10 @@ import Foundation
 @testable import Hermes
 
 struct MockSocketWrapper: WebSocketWrapper {
+    init(socket: WebSocket?) {}
+
+    var textHandler: TextHandler?
+
     init(socket: WebSocket) {}
 
     var connectHandler: ConnectHandler?

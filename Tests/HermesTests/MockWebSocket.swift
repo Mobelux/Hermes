@@ -8,18 +8,24 @@
 import Foundation
 @testable import Hermes
 
-struct MockWebSocket: WebSocket {
-    init?(request: Request) {}
+class MockWebSocket: WebSocket {
+    private var _isConnected: Bool = false
 
+    required init?(request: Request) {}
+
+    var isConnected: Bool { _isConnected }
     var onConnect: (() -> ())?
     var onDisconnect: ((Error?) -> ())?
     var onData: ((Data) -> ())?
+    var onText: ((String) -> ())?
 
     func connect() {
+        _isConnected = true
         onConnect?()
     }
 
     func disconnect() {
+        _isConnected = false
         onDisconnect?(nil)
     }
 
